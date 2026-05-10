@@ -8,6 +8,7 @@ import { BigCTA } from "@/components/sections/BigCTA";
 import { faqGroups } from "@/data/faq";
 import { company } from "@/data/company";
 import { buildWhatsAppUrl, defaultGreeting } from "@/lib/whatsapp";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "FAQ — Pertanyaan yang Sering Diajukan",
@@ -15,9 +16,6 @@ export const metadata: Metadata = {
     "Jawaban atas pertanyaan paling sering diajukan tentang kerja sama dengan PT Wira Karya Sinergi: cakupan layanan, proses kerja sama, garansi, K3, pembayaran, dan tender.",
   alternates: { canonical: "/faq" },
 };
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://wirakaryasinergi.com";
 
 export default function FaqPage() {
   // FAQPage schema.org JSON-LD untuk Google rich results

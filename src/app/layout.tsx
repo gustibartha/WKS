@@ -7,6 +7,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { company } from "@/data/company";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,9 +27,6 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-mono-jetbrains",
   display: "swap",
 });
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://wirakaryasinergi.com";
 
 export const viewport: Viewport = {
   width: "device-width",
