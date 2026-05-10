@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0f172a" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="40" y="40" width="40" height="2" fill="#ea580c"/>
+  <rect x="40" y="40" width="2" height="40" fill="#ea580c"/>
+  <rect x="1118" y="40" width="40" height="2" fill="#ea580c"/>
+  <rect x="1158" y="40" width="2" height="40" fill="#ea580c"/>
+  <rect x="40" y="588" width="40" height="2" fill="#ea580c"/>
+  <rect x="40" y="550" width="2" height="40" fill="#ea580c"/>
+  <rect x="1118" y="588" width="40" height="2" fill="#ea580c"/>
+  <rect x="1158" y="550" width="2" height="40" fill="#ea580c"/>
+  <text x="80" y="180" font-family="Bebas Neue, Anton, sans-serif" font-size="40" fill="#475569" letter-spacing="6">EST. 2014 — JAKARTA</text>
+  <text x="80" y="320" font-family="Bebas Neue, Anton, sans-serif" font-size="140" fill="#0f172a" letter-spacing="-2">PT WIRA KARYA</text>
+  <text x="80" y="450" font-family="Bebas Neue, Anton, sans-serif" font-size="140" fill="#ea580c" letter-spacing="-2">SINERGI</text>
+  <text x="80" y="540" font-family="Inter, sans-serif" font-size="28" fill="#475569">Pengadaan · Konstruksi · Mobilisasi Alat</text>
+  <g transform="translate(960,440)">
+    <rect x="-60" y="-60" width="120" height="120" rx="20" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+    <path d="M0 -42 L24 -10 L0 0 Z" fill="#dc2626"/>
+    <path d="M42 0 L10 24 L0 0 Z" fill="#2563eb"/>
+    <path d="M0 42 L-24 10 L0 0 Z" fill="#16a34a"/>
+    <path d="M-42 0 L-10 -24 L0 0 Z" fill="#eab308"/>
+    <circle r="6" fill="#0f172a"/>
+  </g>
+</svg>

@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  /* ===== Colors — Industrial Modern palette ===== */
+  --color-ink: #0f172a;
+  --color-ink-soft: #1e293b;
+  --color-steel: #475569;
+  --color-steel-soft: #64748b;
+  --color-concrete: #f1f5f9;
+  --color-offwhite: #f8fafc;
+  --color-hairline: #e2e8f0;
+
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+
+  /* Brand shorthands */
+  --color-brand: var(--color-orange-600);
+  --color-brand-hover: var(--color-orange-700);
+  --color-accent: var(--color-amber-500);
+
+  /* ===== Typography ===== */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-bebas), "Inter", sans-serif;
+  --font-mono: var(--font-mono-jetbrains), ui-monospace, monospace;
+
+  /* ===== Container ===== */
+  --container-screen-2xl: 1400px;
+
+  /* ===== Animation ===== */
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-slow-spin: spin 18s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+}
+
+/* ===== Base layer ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: var(--color-offwhite);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: white;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  /* Focus rings — accessible, brand-coloured */
+  :where(a, button, input, textarea, select):focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+/* ===== Reusable utility patterns ===== */
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: var(--container-screen-2xl);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-page { padding-inline: 2.5rem; }
+  }
+
+  .section-y {
+    padding-block: 5rem;
+  }
+  @media (min-width: 768px) {
+    .section-y { padding-block: 8rem; }
+  }
+
+  /* Blueprint grid — used as subtle bg on hero */
+  .bg-blueprint {
+    background-image:
+      linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+            mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+  }
+
+  /* Industrial corner brackets — wraps any element */
+  .corner-bracket {
+    position: relative;
+  }
+  .corner-bracket::before,
+  .corner-bracket::after {
+    content: "";
+    position: absolute;
+    width: 14px; height: 14px;
+    border-color: var(--color-brand);
+    border-style: solid;
+    border-width: 0;
+    pointer-events: none;
+  }
+  .corner-bracket::before {
+    top: 0; left: 0;
+    border-top-width: 1.5px;
+    border-left-width: 1.5px;
+  }
+  .corner-bracket::after {
+    bottom: 0; right: 0;
+    border-bottom-width: 1.5px;
+    border-right-width: 1.5px;
+  }
+
+  /* Display heading shorthand */
+  .heading-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+  }
+
+  .text-mono-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-steel-soft);
+  }
+
+  .marquee-track {
+    animation: var(--animate-marquee);
+  }
+}
