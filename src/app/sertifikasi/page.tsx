@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import {
-  ShieldCheck,
   Award,
   Leaf,
   HardHat,
@@ -30,7 +29,6 @@ const iconMap: Record<CertificationType, LucideIcon> = {
   "iso-quality": Award,
   "iso-environment": Leaf,
   "iso-safety": HardHat,
-  ak3: ShieldCheck,
   competence: FileCheck,
   business: Briefcase,
 };
@@ -57,7 +55,7 @@ export default function SertifikasiPage() {
           {/* Quick stats strip */}
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl">
             <StatCard num="3" label="Standar ISO Aktif" />
-            <StatCard num="2024" label="AK3 Kemnaker" />
+            <StatCard num="UAF/IAF" label="Akreditasi Internasional" />
             <StatCard num="5 thn" label="BNSP Kompetensi" />
             <StatCard num="2028" label="Berlaku s/d ISO" />
           </div>

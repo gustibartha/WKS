@@ -7,7 +7,7 @@ import { company } from "@/data/company";
 const stats = [
   { num: "10+", label: "Tahun Pengalaman" },
   { num: "7", label: "Layanan Inti" },
-  { num: "6", label: "Sertifikasi Resmi" },
+  { num: "5", label: "Sertifikasi Resmi" },
 ];
 
 export function AboutPreview() {

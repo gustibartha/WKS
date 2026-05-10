@@ -1,5 +1,4 @@
 import {
-  ShieldCheck,
   Award,
   Leaf,
   HardHat,
@@ -19,7 +18,6 @@ const iconMap: Record<CertificationType, LucideIcon> = {
   "iso-quality": Award,
   "iso-environment": Leaf,
   "iso-safety": HardHat,
-  ak3: ShieldCheck,
   competence: FileCheck,
   business: Briefcase,
 };
@@ -50,9 +48,9 @@ export function CertificationsRow() {
 
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-2xl mx-auto text-steel leading-relaxed">
-            Triple ISO (Quality · Environment · OH&S), AK3 Kemnaker, BNSP
-            Konstruksi, dan SBU resmi — komitmen kami pada standar dibuktikan
-            dengan dokumen yang dapat diverifikasi.
+            Triple ISO (Quality · Environment · OH&S), Sertifikat Kompetensi
+            BNSP Konstruksi, dan SBU resmi — komitmen kami pada standar
+            dibuktikan dengan dokumen yang dapat diverifikasi.
           </p>
         </Reveal>
 

@@ -57,8 +57,8 @@ export const faqGroups: FaqGroup[] = [
         a: "Kami terbiasa kerja di pabrik dan fasilitas yang tidak boleh shutdown. Pendekatan kami: pre-job safety meeting wajib, prosedur LOTO untuk pekerjaan kelistrikan, koordinasi dengan tim safety klien, dan jadwal kerja fleksibel (termasuk shift malam atau weekend) agar operasional klien tetap berjalan normal.",
       },
       {
-        q: "Apakah tim memiliki sertifikasi K3?",
-        a: "Ya. Tim kami memegang sertifikat AK3 dari Kementerian Ketenagakerjaan, dan personel teknis tertentu memiliki Sertifikat Kompetensi BNSP sesuai bidangnya (mis. Pengawas Struktur Bangunan Madya). Untuk pekerjaan di area kelistrikan dan working-at-height, kami juga menyiapkan APD dan SOP yang sesuai standar.",
+        q: "Apakah tim memiliki sertifikasi yang relevan?",
+        a: "Ya. Personel teknis kami memegang Sertifikat Kompetensi BNSP sesuai bidangnya (mis. Pengawas Pekerjaan Struktur Bangunan Gedung Madya untuk Operations Manager kami). Sebagai perusahaan, kami juga tersertifikasi ISO 9001, 14001, dan 45001 yang mencakup sistem manajemen K3 secara menyeluruh. Untuk pekerjaan kelistrikan dan working-at-height, kami menyiapkan APD, prosedur LOTO, serta safety induction wajib bagi seluruh personel di lapangan.",
       },
       {
         q: "Apakah ada garansi pekerjaan?",

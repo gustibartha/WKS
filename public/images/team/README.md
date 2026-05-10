@@ -8,7 +8,7 @@ Nama file harus sama dengan `slug` di `src/data/team.ts`:
 
 - `ardi.jpg`
 - `suparno.jpg`
-- `andri-eko-mardani.jpg`
+- `salsa.jpg`
 
 ## Spesifikasi
 

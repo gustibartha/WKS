@@ -33,16 +33,15 @@ export const teamLeaders: TeamMember[] = [
     certifications: [
       "Sertifikat Kompetensi BNSP — Pengawas Struktur Bangunan Gedung Madya",
     ],
+    photo: "/images/team/suparno.jpg",
   },
   {
-    slug: "andri-eko-mardani",
-    name: "Andri Eko Mardani",
-    role: "K3 Expert",
+    slug: "salsa",
+    name: "Salsa",
+    role: "Administration, Tax & HR",
     shortBio:
-      "Memastikan setiap pekerjaan di lapangan mengikuti norma K3 yang berlaku — dari pre-job safety meeting hingga audit pasca-pelaksanaan.",
-    certifications: [
-      "Sertifikat AK3 Kemnaker RI — Pembinaan Pengawasan Norma K3",
-    ],
+      "Menangani administrasi keuangan, kepatuhan perpajakan, dan pengelolaan SDM perusahaan — memastikan dokumen kontrak, faktur pajak, dan support proses tender berjalan rapi dan tepat waktu.",
+    photo: "/images/team/salsa.jpg",
   },
 ];
 
@@ -66,9 +65,9 @@ export const teamCapacity: TeamCapacity[] = [
       "Akumulasi pengalaman tim profesional di proyek industri Jakarta dan sekitarnya.",
   },
   {
-    number: "3",
-    label: "Sertifikasi Keahlian Tim",
+    number: "3 ISO",
+    label: "Standar Manajemen Aktif",
     detail:
-      "AK3 Kemnaker, Kompetensi BNSP, dan sertifikasi internal lainnya yang diperbarui rutin.",
+      "Triple ISO 9001 (Quality), 14001 (Environment), dan 45001 (Occupational H&S) yang diakreditasi internasional via UAF/IAF.",
   },
 ];

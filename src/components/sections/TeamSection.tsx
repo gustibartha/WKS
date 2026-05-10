@@ -26,7 +26,7 @@ export function TeamSection() {
         </Reveal>
 
         {/* Leaders grid */}
-        <div className="mt-14 grid md:grid-cols-3 gap-5">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {teamLeaders.map((member, i) => (
             <Reveal key={member.slug} delay={i * 0.06}>
               <LeaderCard member={member} />

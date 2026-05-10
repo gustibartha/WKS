@@ -11,7 +11,6 @@ export type CertificationType =
   | "iso-quality"
   | "iso-environment"
   | "iso-safety"
-  | "ak3"
   | "competence"
   | "business";
 
@@ -83,21 +82,6 @@ export const certifications: Certification[] = [
     validityNote: "Subject to surveillance audit tahunan",
     verifyUrl: "https://www.zeppycert.com",
     image: "/images/certifications/iso-45001.jpg",
-  },
-  {
-    id: "ak3",
-    code: "AK3",
-    shortName: "Ahli K3 — Kemnaker RI",
-    fullName: "Pembinaan Pengawasan Norma K3",
-    iconKey: "ak3",
-    description:
-      "Sertifikasi Ahli K3 yang diterbitkan Kementerian Ketenagakerjaan Republik Indonesia — bukti bahwa tim kami memiliki kompetensi resmi untuk mengawasi keselamatan kerja sesuai regulasi nasional.",
-    issuer: "Kementerian Ketenagakerjaan Republik Indonesia (Kemnaker)",
-    certNumber: "5/0285200624/AS.01.03/VI/2024",
-    holder: "Andri Eko Mardani",
-    qualification: "Calon Ahli Keselamatan dan Kesehatan Kerja (K3)",
-    issuedDate: "20 Juni 2024",
-    image: "/images/certifications/ak3.jpg",
   },
   {
     id: "competence",

@@ -115,7 +115,7 @@ export default function TentangPage() {
               </div>
               <div>
                 <div className="font-display text-5xl text-brand leading-none">
-                  6
+                  5
                 </div>
                 <div className="mt-2 text-mono-label">Sertifikasi Resmi</div>
               </div>
