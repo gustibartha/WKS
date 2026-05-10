@@ -20,16 +20,16 @@ export const teamLeaders: TeamMember[] = [
   {
     slug: "ardi",
     name: "Ardi",
-    role: "Business Development",
+    role: "Direktur",
     shortBio:
-      "Penanggung jawab pengembangan bisnis dan komunikasi klien — titik kontak utama untuk inquiry baru, koordinasi tender, dan penawaran proyek.",
+      "Pemimpin perusahaan yang memegang arah strategis bisnis, kemitraan tingkat tinggi dengan klien, serta keputusan operasional kunci di setiap proyek WKS.",
   },
   {
     slug: "suparno",
     name: "Suparno",
-    role: "Operations Manager",
+    role: "Marketing & Koordinator Lapangan",
     shortBio:
-      "Mengoordinasikan eksekusi proyek di lapangan dengan pengalaman lebih dari satu dekade di bidang konstruksi dan instalasi industrial.",
+      "Penghubung antara kebutuhan klien dan eksekusi di lapangan — menangani komunikasi proyek dari penawaran hingga koordinasi pekerjaan harian dengan tim teknisi.",
     certifications: [
       "Sertifikat Kompetensi BNSP — Pengawas Struktur Bangunan Gedung Madya",
     ],

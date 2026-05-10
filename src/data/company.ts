@@ -70,13 +70,13 @@ export const company = {
       name: "Ardi",
       phone: "+62 813 8504 0467",
       whatsappNumber: "6281385040467",
-      role: "Business Development",
+      role: "Direktur",
     },
     {
       name: "Suparno",
       phone: "+62 821 1445 9919",
       whatsappNumber: "6282114459919",
-      role: "Operations",
+      role: "Marketing & Koordinator Lapangan",
     },
   ],
 
