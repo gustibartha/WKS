@@ -33,7 +33,7 @@ export const teamLeaders: TeamMember[] = [
     certifications: [
       "Sertifikat Kompetensi BNSP — Pengawas Struktur Bangunan Gedung Madya",
     ],
-    photo: "/images/team/suparno.jpg",
+    photo: "/images/team/suparno.webp",
   },
   {
     slug: "salsa",
@@ -41,7 +41,7 @@ export const teamLeaders: TeamMember[] = [
     role: "Administration, Tax & HR",
     shortBio:
       "Menangani administrasi keuangan, kepatuhan perpajakan, dan pengelolaan SDM perusahaan — memastikan dokumen kontrak, faktur pajak, dan support proses tender berjalan rapi dan tepat waktu.",
-    photo: "/images/team/salsa.jpg",
+    photo: "/images/team/salsa.webp",
   },
 ];
 
