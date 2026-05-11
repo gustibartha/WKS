@@ -541,9 +541,23 @@ export const portfolio: Project[] = [
   },
 ];
 
+/**
+ * Portofolio yang tampil di website publik — hanya entri dengan foto
+ * asli yang sudah di-upload. Entri tanpa `image` di-skip otomatis.
+ *
+ * Untuk menambah proyek baru: drop foto ke /public/images/portfolio/
+ * dan set field `image` di entri. Otomatis muncul di /portofolio,
+ * home page preview, dan "Karya Terkait" di halaman detail layanan.
+ */
+export const visibleProjects: Project[] = portfolio.filter((p) => Boolean(p.image));
+
+/**
+ * Kategori yang punya minimal satu proyek dengan foto. Kategori yang
+ * semuanya placeholder otomatis di-skip dari filter chip.
+ */
 export const portfolioCategories = (): { slug: string; label: string }[] => {
   const seen = new Map<string, string>();
-  for (const p of portfolio) {
+  for (const p of visibleProjects) {
     if (!seen.has(p.category)) seen.set(p.category, p.categoryLabel);
   }
   return Array.from(seen, ([slug, label]) => ({ slug, label }));

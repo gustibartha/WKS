@@ -2,7 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { portfolio, portfolioCategories, type Project } from "@/data/portfolio";
+import {
+  visibleProjects,
+  portfolioCategories,
+  type Project,
+} from "@/data/portfolio";
 import { PortfolioImage } from "@/components/ui/PortfolioImage";
 import { cn } from "@/lib/cn";
 
@@ -16,8 +20,8 @@ export function PortfolioFilter() {
   const filtered: Project[] = useMemo(
     () =>
       active === ALL
-        ? portfolio
-        : portfolio.filter((p) => p.category === active),
+        ? visibleProjects
+        : visibleProjects.filter((p) => p.category === active),
     [active]
   );
 
@@ -31,8 +35,8 @@ export function PortfolioFilter() {
           const isActive = t.slug === active;
           const count =
             t.slug === ALL
-              ? portfolio.length
-              : portfolio.filter((p) => p.category === t.slug).length;
+              ? visibleProjects.length
+              : visibleProjects.filter((p) => p.category === t.slug).length;
           return (
             <button
               key={t.slug}

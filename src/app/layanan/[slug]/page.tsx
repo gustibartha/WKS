@@ -7,7 +7,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { BigCTA } from "@/components/sections/BigCTA";
 import { findService, services } from "@/data/services";
-import { portfolio } from "@/data/portfolio";
+import { visibleProjects } from "@/data/portfolio";
 import { company } from "@/data/company";
 import { buildServiceInquiry, buildWhatsAppUrl } from "@/lib/whatsapp";
 import { PortfolioImage } from "@/components/ui/PortfolioImage";
@@ -38,7 +38,9 @@ export default async function ServiceDetailPage(props: {
   const service = findService(slug);
   if (!service) notFound();
 
-  const related = portfolio.filter((p) => p.category === slug).slice(0, 4);
+  const related = visibleProjects
+    .filter((p) => p.category === slug)
+    .slice(0, 4);
   const idx = services.findIndex((s) => s.slug === slug);
   const nextService = services[(idx + 1) % services.length];
   const waUrl = buildWhatsAppUrl(

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { portfolio } from "@/data/portfolio";
+import { visibleProjects } from "@/data/portfolio";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { PortfolioImage } from "@/components/ui/PortfolioImage";
@@ -11,10 +11,10 @@ import { PortfolioImage } from "@/components/ui/PortfolioImage";
  * jadi tujuan utama.
  */
 export function PortfolioPreview() {
-  // Pick first project from each unique category, max 6
-  const featured: typeof portfolio = [];
+  // Pick first project from each unique category, max 6 — only visible
+  const featured: typeof visibleProjects = [];
   const seen = new Set<string>();
-  for (const p of portfolio) {
+  for (const p of visibleProjects) {
     if (!seen.has(p.category)) {
       seen.add(p.category);
       featured.push(p);
