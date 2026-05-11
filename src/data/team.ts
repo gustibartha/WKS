@@ -23,6 +23,7 @@ export const teamLeaders: TeamMember[] = [
     role: "Direktur",
     shortBio:
       "Pemimpin perusahaan yang memegang arah strategis bisnis, kemitraan tingkat tinggi dengan klien, serta keputusan operasional kunci di setiap proyek WKS.",
+    photo: "/images/team/ardi.webp",
   },
   {
     slug: "suparno",
